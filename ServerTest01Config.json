@@ -1,0 +1,7 @@
+{
+    "serviceName": "servertest01",
+    "exchange": "serverexchange01",
+    "routingKey": "routingkey01",
+    "message01": "This is message 01",
+    "message02": "This is message 02"
+}
