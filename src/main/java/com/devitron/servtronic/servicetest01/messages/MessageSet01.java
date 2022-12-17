@@ -2,8 +2,6 @@ package com.devitron.servtronic.servicetest01.messages;
 
 import com.devitron.servtronic.messages.MessageReply;
 import com.devitron.servtronic.messages.MessageRequest;
-import com.devitron.servtronic.servicetest01.config.ServiceTest01Config;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class MessageSet01 {
 
@@ -13,6 +11,7 @@ public class MessageSet01 {
         private Integer fieldInteger;
 
 
+        public PrintHelloRequest() { }
         public PrintHelloRequest(String source) {
             super("servertest01","PrintHello");
         }
@@ -38,6 +37,7 @@ public class MessageSet01 {
 
         private String finalMessage = "";
 
+        public PrintHelloReply() { }
         public PrintHelloReply(PrintHelloRequest request) {
             super(request);
         }
